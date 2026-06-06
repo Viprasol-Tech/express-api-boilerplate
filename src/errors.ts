@@ -31,3 +31,31 @@ export class ValidationError extends HttpError {
     this.name = "ValidationError";
   }
 }
+
+export class UnauthorizedError extends HttpError {
+  constructor(message = "Authentication required", details?: unknown) {
+    super(401, message, details);
+    this.name = "UnauthorizedError";
+  }
+}
+
+export class ForbiddenError extends HttpError {
+  constructor(message = "Insufficient permissions", details?: unknown) {
+    super(403, message, details);
+    this.name = "ForbiddenError";
+  }
+}
+
+export class ConflictError extends HttpError {
+  constructor(message = "Resource conflict", details?: unknown) {
+    super(409, message, details);
+    this.name = "ConflictError";
+  }
+}
+
+export class TooManyRequestsError extends HttpError {
+  constructor(message = "Too many requests", details?: unknown) {
+    super(429, message, details);
+    this.name = "TooManyRequestsError";
+  }
+}

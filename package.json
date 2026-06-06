@@ -1,7 +1,7 @@
 {
   "name": "express-api-boilerplate",
-  "version": "0.1.0",
-  "description": "Production-style Express + TypeScript REST API boilerplate.",
+  "version": "0.2.0",
+  "description": "Production-style Express + TypeScript REST API boilerplate with JWT auth, validation, pagination, rate limiting, structured logging, and OpenAPI docs.",
   "type": "module",
   "license": "MIT",
   "author": "Viprasol Tech Private Limited",
@@ -17,7 +17,14 @@
     "typescript",
     "rest-api",
     "nodejs",
-    "backend"
+    "backend",
+    "jwt",
+    "authentication",
+    "rate-limiting",
+    "validation",
+    "pagination",
+    "openapi",
+    "starter"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -26,8 +33,11 @@
   ],
   "scripts": {
     "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "node --watch --experimental-strip-types src/server.ts",
     "typecheck": "tsc --noEmit",
-    "test": "vitest run"
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "express": "^4.19.2"
