@@ -1,0 +1,43 @@
+{
+  "name": "express-api-boilerplate",
+  "version": "0.1.0",
+  "description": "Production-style Express + TypeScript REST API boilerplate.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Viprasol Tech Private Limited",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Viprasol-Tech/express-api-boilerplate.git"
+  },
+  "homepage": "https://viprasol.com",
+  "keywords": [
+    "express",
+    "api",
+    "boilerplate",
+    "typescript",
+    "rest-api",
+    "nodejs",
+    "backend"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.0",
+    "@types/supertest": "^6.0.2",
+    "supertest": "^7.0.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}
