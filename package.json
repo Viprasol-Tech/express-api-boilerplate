@@ -40,13 +40,13 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.22.3"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
-    "@types/node": "^20.14.0",
-    "@types/supertest": "^6.0.2",
-    "supertest": "^7.0.0",
+    "@types/node": "^20.19.43",
+    "@types/supertest": "^7.2.1",
+    "supertest": "^7.3.2",
     "typescript": "^5.5.0",
     "vitest": "^2.0.0"
   }
